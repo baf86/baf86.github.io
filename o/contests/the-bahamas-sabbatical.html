@@ -7,127 +7,23 @@
 
 <style>
 /* webkit printing magic: print all background colors */
-/**
- * YUI Reset
- * @module reset
- * @namespace
- * @requires 
- */
-html {
-	color: #000;
-	background: #FFF;
-}
 
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
-form,
-fieldset,
-legend,
-input,
-button,
-textarea,
-select,
-p,
-blockquote,
-th,
-td {
+	html,
+body {
 	margin: 0;
 	padding: 0;
 }
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 90%;
+		color: rgb(55, 53, 47);
+	}
 }
 
-fieldset,
-img {
-	border: 0;
-}
-
-address,
-button,
-caption,
-cite,
-code,
-dfn,
-em,
-input,
-optgroup,
-option,
-select,
-strong,
-textarea,
-th,
-var {
-    font:inherit;
-}
-
-del,
-ins {
-	text-decoration: none;
-}
-
-li {
-	list-style: none;
-}
-
-caption,
-th {
-	text-align: left;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-size: 100%;
-	font-weight: normal;
-}
-
-q:before,
-q:after {
-	content: '';
-}
-
-abbr,
-acronym {
-	border: 0;
-	font-variant: normal;
-}
-
-sup {
-	vertical-align: baseline;
-}
-
-sub {
-	vertical-align: baseline;
-}
-
-/*because legend doesn't inherit in IE */
-legend {
-	color: #000;
-}
-	
 body {
 	line-height: 1.5;
-max-width: 90%;
+	white-space: pre-wrap;
 }
 
 a,
