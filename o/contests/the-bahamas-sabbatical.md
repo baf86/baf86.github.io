@@ -578,7 +578,7 @@ blockquote {
 <picture>
   <source srcset="/o/contests/img/airbnb.webp" type="image/webp">
   <source srcset="/o/contests/img/airbnb.jpg" type="image/jpeg"> 
-<img src="/o/contests/img/airbnb.jpg" width="50" height="50">
+<img src="/o/contests/img/airbnb.jpg" width="150" height="150">
 </picture>
 </div>
 
