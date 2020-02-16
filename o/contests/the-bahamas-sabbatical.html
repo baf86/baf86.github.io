@@ -32,9 +32,24 @@ body {
 }
 
 a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
+a:link {
+  color: #2ab0fd;
+}
+
+/* visited link */
+a:visited {
+  color: #fd512a;
+}
+
+/* mouse over link */
+a:hover {
+  color: #2ab0fd;
+  text-decoration: underline overline;
+}
+
+/* selected link */
+a:active {
+  color: #bfcfd8;
 }
 
 .pdf-relative-link-path {
@@ -369,7 +384,7 @@ p {
 }
 
 .image {
-	border: none;
+	border: 1px;
 	margin: 1.5em 0;
 	padding: 0;
 	border-radius: 0;
