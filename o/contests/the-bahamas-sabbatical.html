@@ -8,16 +8,22 @@
 <style>
 /* webkit printing magic: print all background colors */
 
-	html,
+html,
 body {
-max-width: 90%;
-max-height: 90%;
-color: rgb(55, 53, 47);
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 95%;
+		max-height: 95%;
+		color: rgb(55, 53, 47);
+	}
 }
 
 body {
 	line-height: 1.5;
-
 }
 	
 a,
