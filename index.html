@@ -577,22 +577,28 @@ blockquote {
 	margin-right: 5px;
 }
 	
-.social-links {
-  margin-top: 0.5em;
-  ul {
-    margin: 0;
-    padding: 0;
-    li {
-      list-style: none;
-      display: inline-block;
-      margin-left: 1em;
-      a.social-link-item {
-        color: #e93d2c;
-        &:hover,
-        &:focus {
-          color: lighten(#dc881e, 14%);
-        }
-      }
+
+a,
+a:link {
+  color: #2ab0fd;
+}
+
+/* visited link */
+a:visited {
+  color: #fd512a;
+}
+
+/* mouse over link */
+a:hover {
+  color: #2ab0fd;
+  text-decoration: underline overline;
+}
+
+/* selected link */
+a:active {
+  color: #bfcfd8;
+}
+
 </style>
 </head>
 	
@@ -956,16 +962,12 @@ blockquote {
 <div style="text-align:center; font-size: 0.8em">© <strong>BeAForeigner Inc.</strong> 💛 Made from the heart.
 2093 Philadelphia Pike #1106 | Claymont, DE  19703</div><br />
 
-<div class="social-links">
-<ul>
-<li><a aria-label="Love BeAForeigner Donate!" rel="noreferrer" href="https://liberapay.com/elyserobinson" class="social-link-item" target="_blank"><i class="fas fa-donate"></i></a></li>
-<li><a aria-label="Love BeAForeigner? Buy something!" rel="noreferrer" href="https://{{ author.amazon-author }}" class="social-link-item" target="_blank"><i class="fab fa-amazon"></i></a></li>
-<li><a aria-label="Go to BeAForeigner's YouTube Channel" rel="noreferrer" href="http://youtube.com/elyserobinson" class="social-link-item" target="_blank"><i class="fab fa-youtube"></i></a></li>
-<li><a aria-label="Go to BeAForeigner's Instagram Page" rel="noreferrer" href="http://instagram.com/beaforeignercom" class="social-link-item" target="_blank"><i class="fab fa-instagram"></i></a></li>
-<li><a rel="noreferrer" href="http://facebook.com/beaforeignercom" class="social-link-item" target="_blank"><i class="fab fa-facebook"></i></a></li>
-<li><a aria-label="Go to BeAForeigner's Twitter Page" rel="noreferrer" href="http://twitter.com/beaforeigner" class="social-link-item" target="_blank"><i class="fab fa-twitter"></i></a></li>
-</ul>
-</div>
+<a aria-label="Love BeAForeigner Donate!" rel="noreferrer" href="https://liberapay.com/elyserobinson" class="social-link-item" target="_blank"><i class="fas fa-donate"></i></a> &nbsp; 
+<a aria-label="Love BeAForeigner? Buy something!" rel="noreferrer" href="https://{{ author.amazon-author }}" class="social-link-item" target="_blank"><i class="fab fa-amazon"></i></a> &nbsp; 
+<a aria-label="Go to BeAForeigner's YouTube Channel" rel="noreferrer" href="http://youtube.com/elyserobinson" class="social-link-item" target="_blank"><i class="fab fa-youtube"></i></a> &nbsp; 
+<a aria-label="Go to BeAForeigner's Instagram Page" rel="noreferrer" href="http://instagram.com/beaforeignercom" class="social-link-item" target="_blank"><i class="fab fa-instagram"></i></a> &nbsp; 
+<a rel="noreferrer" href="http://facebook.com/beaforeignercom" class="social-link-item" target="_blank"><i class="fab fa-facebook"></i></a> &nbsp; 
+<a aria-label="Go to BeAForeigner's Twitter Page" rel="noreferrer" href="http://twitter.com/beaforeigner" class="social-link-item" target="_blank"><i class="fab fa-twitter"></i></a>
 
 </article>
 
