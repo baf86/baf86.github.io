@@ -1,12 +1,11 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>BeAForeigner | The Bahamas Sabbatical</title><style>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BeAForeigner | The Bahamas Sabbatical</title>
+	
+<style>
 /* webkit printing magic: print all background colors */
-html {
-	-webkit-print-color-adjust: exact;
-}
-* {
-	box-sizing: border-box;
-	-webkit-print-color-adjust: exact;
-}
 
 html,
 body {
@@ -16,88 +15,37 @@ body {
 @media only screen {
 	body {
 		margin: 2em auto;
-		max-width: 900px;
+		max-width: 95%;
+		max-height: 95%;
 		color: rgb(55, 53, 47);
 	}
 }
 
 body {
 	line-height: 1.5;
-	white-space: pre-wrap;
 }
-
+	
 a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
+a:link {
+  color: #2ab0fd;
 }
 
-.pdf-relative-link-path {
-	font-size: 80%;
-	color: #444;
+/* visited link */
+a:visited {
+  color: #fd512a;
 }
 
-h1,
-h2,
-h3 {
-	letter-spacing: -0.01em;
-	line-height: 1.2;
-	font-weight: 600;
-	margin-bottom: 0;
+/* mouse over link */
+a:hover {
+  color: #2ab0fd;
+  text-decoration: underline overline;
 }
 
-.page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
+/* selected link */
+a:active {
+  color: #bfcfd8;
 }
 
-h1 {
-	font-size: 1.875rem;
-	margin-top: 1.875rem;
-}
-
-h2 {
-	font-size: 1.5rem;
-	margin-top: 1.5rem;
-}
-
-h3 {
-	font-size: 1.25rem;
-	margin-top: 1.25rem;
-}
-
-.source {
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 1.5em;
-	word-break: break-all;
-}
-
-.callout {
-	border-radius: 3px;
-	padding: 1rem;
-}
-
-figure {
-	margin: 1.25em 0;
-	page-break-inside: avoid;
-}
-
-figcaption {
-	opacity: 0.5;
-	font-size: 85%;
-	margin-top: 0.5em;
-}
-
-mark {
-	background-color: transparent;
-}
-
-.indented {
-	padding-left: 1.5em;
-}
 
 hr {
 	background: transparent;
@@ -106,306 +54,14 @@ hr {
 	height: 1px;
 	visibility: visible;
 	border: none;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+	border-bottom: 1px solid #cfe5f1;
 }
 
 img {
-	max-width: 100%;
-}
-
-@media only print {
-	img {
-		max-height: 100vh;
-		object-fit: contain;
-	}
-}
-
-@page {
-	margin: 1in;
-}
-
-.collection-content {
-	font-size: 0.875rem;
-}
-
-.column-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.column {
-	padding: 0 1em;
-}
-
-.column:first-child {
-	padding-left: 0;
-}
-
-.column:last-child {
-	padding-right: 0;
-}
-
-.table_of_contents-item {
-	display: block;
-	font-size: 0.875rem;
-	line-height: 1.3;
-	padding: 0.125rem;
-}
-
-.table_of_contents-indent-1 {
-	margin-left: 1.5rem;
-}
-
-.table_of_contents-indent-2 {
-	margin-left: 3rem;
-}
-
-.table_of_contents-indent-3 {
-	margin-left: 4.5rem;
-}
-
-.table_of_contents-link {
-	text-decoration: none;
-	opacity: 0.7;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-}
-
-table,
-th,
-td {
-	border: 1px solid rgba(55, 53, 47, 0.09);
-	border-collapse: collapse;
-}
-
-table {
-	border-left: none;
-	border-right: none;
-}
-
-th,
-td {
-	font-weight: normal;
-	padding: 0.25em 0.5em;
-	line-height: 1.5;
-	min-height: 1.5em;
-	text-align: left;
-}
-
-th {
-	color: rgba(55, 53, 47, 0.6);
-}
-
-ol,
-ul {
-	margin: 0;
-	margin-block-start: 0.6em;
-	margin-block-end: 0.6em;
-}
-
-li > ol:first-child,
-li > ul:first-child {
-	margin-block-start: 0.6em;
-}
-
-ul > li {
-	list-style: disc;
-}
-
-ul.to-do-list {
-	text-indent: -1.7em;
-}
-
-ul.to-do-list > li {
-	list-style: none;
-}
-
-.to-do-children-checked {
-	text-decoration: line-through;
-	opacity: 0.375;
-}
-
-ul.toggle > li {
-	list-style: none;
-}
-
-ul {
-	padding-inline-start: 1.7em;
-}
-
-ul > li {
-	padding-left: 0.1em;
-}
-
-ol {
-	padding-inline-start: 1.6em;
-}
-
-ol > li {
-	padding-left: 0.2em;
-}
-
-.mono ol {
-	padding-inline-start: 2em;
-}
-
-.mono ol > li {
-	text-indent: -0.4em;
-}
-
-.toggle {
-	padding-inline-start: 0em;
-	list-style-type: none;
-}
-
-/* Indent toggle children */
-.toggle > li > details {
-	padding-left: 1.7em;
-}
-
-.toggle > li > details > summary {
-	margin-left: -1.1em;
-}
-
-.selected-value {
-	display: inline-block;
-	padding: 0 0.5em;
-	background: rgba(206, 205, 202, 0.5);
-	border-radius: 3px;
-	margin-right: 0.5em;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-	white-space: nowrap;
-}
-
-.collection-title {
-	display: inline-block;
-	margin-right: 1em;
-}
-
-time {
-	opacity: 0.5;
-}
-
-.icon {
-	display: inline-block;
-	max-width: 1.2em;
-	max-height: 1.2em;
-	text-decoration: none;
-	vertical-align: text-bottom;
-	margin-right: 0.5em;
-}
-
-img.icon {
-	border-radius: 3px;
-}
-
-.user-icon {
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	margin-right: 0.5rem;
-}
-
-.user-icon-inner {
-	font-size: 0.8em;
-}
-
-.text-icon {
-	border: 1px solid #000;
-	text-align: center;
-}
-
-.page-cover-image {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-	height: 30vh;
-}
-
-.page-header-icon {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
-
-.page-header-icon-with-cover {
-	margin-top: -0.72em;
-	margin-left: 0.07em;
-}
-
-.page-header-icon img {
-	border-radius: 3px;
-}
-
-.link-to-page {
-	margin: 1em 0;
-	padding: 0;
-	border: none;
-	font-weight: 500;
-}
-
-p > .user {
-	opacity: 0.5;
-}
-
-td > .user,
-td > time {
-	white-space: nowrap;
-}
-
-input[type="checkbox"] {
-	transform: scale(1.5);
-	margin-right: 0.6em;
-	vertical-align: middle;
-}
-
-p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-.image {
-	border: none;
-	margin: 1.5em 0;
-	padding: 0;
-	border-radius: 0;
-	text-align: center;
-}
-
-.code,
-code {
-	background: rgba(135, 131, 120, 0.15);
-	border-radius: 3px;
-	padding: 0.2em 0.4em;
-	border-radius: 3px;
-	font-size: 85%;
-	tab-size: 2;
-}
-
-code {
-	color: #eb5757;
-}
-
-.code {
-	padding: 1.5em 1em;
-}
-
-.code > code {
-	background: none;
-	padding: 0;
-	font-size: 100%;
-	color: inherit;
-}
-
-blockquote {
-	font-size: 1.25em;
-	margin: 1em 0;
-	padding-left: 1em;
-	border-left: 3px solid rgb(55, 53, 47);
-}
-
-.bookmark-href {
-	font-size: 0.75em;
-	opacity: 0.5;
+	
+	border: 1px solid #000000;
+	width: 150px;
+	height: auto;
 }
 
 .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
@@ -414,165 +70,67 @@ blockquote {
 .mono { font-family: Nitti, 'Microsoft YaHei', '微软雅黑', monospace; }
 .pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
 
-.pdf .code { font-family: Source Code Pro, 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+</style>
 
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, KaiTi, STKaiTi, '华文楷体', KaiTi_GB2312, '楷体_GB2312', serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+</head>
 
-.pdf .mono { font-family: PT Mono, Nitti, 'Microsoft YaHei', '微软雅黑', monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+<body>
 
-.highlight-default {
-}
-.highlight-gray {
-	color: rgb(155,154,151);
-}
-.highlight-brown {
-	color: rgb(100,71,58);
-}
-.highlight-orange {
-	color: rgb(217,115,13);
-}
-.highlight-yellow {
-	color: rgb(223,171,1);
-}
-.highlight-teal {
-	color: rgb(15,123,108);
-}
-.highlight-blue {
-	color: rgb(11,110,153);
-}
-.highlight-purple {
-	color: rgb(105,64,165);
-}
-.highlight-pink {
-	color: rgb(173,26,114);
-}
-.highlight-red {
-	color: rgb(224,62,62);
-}
-.highlight-gray_background {
-	background: rgb(235,236,237);
-}
-.highlight-brown_background {
-	background: rgb(233,229,227);
-}
-.highlight-orange_background {
-	background: rgb(250,235,221);
-}
-.highlight-yellow_background {
-	background: rgb(251,243,219);
-}
-.highlight-teal_background {
-	background: rgb(221,237,234);
-}
-.highlight-blue_background {
-	background: rgb(221,235,241);
-}
-.highlight-purple_background {
-	background: rgb(234,228,242);
-}
-.highlight-pink_background {
-	background: rgb(244,223,235);
-}
-.highlight-red_background {
-	background: rgb(251,228,228);
-}
-.block-color-default {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray {
-	color: rgba(55, 53, 47, 0.6);
-	fill: rgba(55, 53, 47, 0.6);
-}
-.block-color-brown {
-	color: rgb(100,71,58);
-	fill: rgb(100,71,58);
-}
-.block-color-orange {
-	color: rgb(217,115,13);
-	fill: rgb(217,115,13);
-}
-.block-color-yellow {
-	color: rgb(223,171,1);
-	fill: rgb(223,171,1);
-}
-.block-color-teal {
-	color: rgb(15,123,108);
-	fill: rgb(15,123,108);
-}
-.block-color-blue {
-	color: rgb(11,110,153);
-	fill: rgb(11,110,153);
-}
-.block-color-purple {
-	color: rgb(105,64,165);
-	fill: rgb(105,64,165);
-}
-.block-color-pink {
-	color: rgb(173,26,114);
-	fill: rgb(173,26,114);
-}
-.block-color-red {
-	color: rgb(224,62,62);
-	fill: rgb(224,62,62);
-}
-.block-color-gray_background {
-	background: rgb(235,236,237);
-}
-.block-color-brown_background {
-	background: rgb(233,229,227);
-}
-.block-color-orange_background {
-	background: rgb(250,235,221);
-}
-.block-color-yellow_background {
-	background: rgb(251,243,219);
-}
-.block-color-teal_background {
-	background: rgb(221,237,234);
-}
-.block-color-blue_background {
-	background: rgb(221,235,241);
-}
-.block-color-purple_background {
-	background: rgb(234,228,242);
-}
-.block-color-pink_background {
-	background: rgb(244,223,235);
-}
-.block-color-red_background {
-	background: rgb(251,228,228);
-}
-
-.checkbox {
-	display: inline-flex;
-	vertical-align: text-bottom;
-	width: 16;
-	height: 16;
-	background-size: 16px;
-	margin-left: 2px;
-	margin-right: 5px;
-}
-
-.checkbox-on {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-	
-</style></head><body><article id="5fdd694a-cb78-46d2-a286-fb84df88a3b1" class="page sans"><header><div class="page-header-icon undefined">
-
+<article id="5fdd694a-cb78-46d2-a286-fb84df88a3b1" class="page sans">
 <picture>
-  <source srcset="/img/airbnb.webp" type="image/webp">
-  <source srcset="/img/airbnb.jpg" type="image/jpeg"> 
-<img src="/img/airbnb.jpg">
+  <source srcset="/o/contests/img/airbnb.webp" type="image/webp">
+  <source srcset="/o/contests/img/airbnb.jpg" type="image/jpeg"> 
+<img src="/o/contests/img/airbnb.jpg">
 </picture>
+	
+<br /><br />
+	
+<div style="font-size: 2em"><b>The Bahamas Sabbatical</b></div>
+	
+<br />
 
-</div><h1 class="page-title">Copy of The Bahamas Sabbatical</h1><table class="properties"><tbody><tr class="property-row property-row-created_time"><th>Job Posted</th><td><time>@Feb 16, 2020 1:22 AM</time></td></tr><tr class="property-row property-row-multi_select"><th>Location</th><td></td></tr></tbody></table></header><div class="page-body"><h1 id="ee3ec53b-2b41-4618-9197-9f90a607ad14" class="">A once-in-a-lifetime opportunityto help preserve an archipelago</h1><p id="6f38490f-e442-44fd-9743-6cfd2a9e789f" class="">This April, you can live on three of The Bahamas’ family islands and become part of a passionate community in a country made up of more than 700 islands. You’ll spend two months helping expose its unique culture and rich natural resources to a new wave of visitors.
-</p><p id="f987fab8-383f-45ce-8b1e-c25650827a73" class=""><strong>Sabbatical runs April 1 to May 31, 2020.</strong></p><p id="1e5e0de7-8160-4214-865a-7744aaf3c9f0" class="">Terms: <a href="https://www.airbnb.com/d/bahamas_terms">https://www.airbnb.com/d/bahamas_terms</a></p><p id="8fb008af-7b79-40be-9cfc-888c49831b67" class="">
-</p><p id="632c25fe-88c7-4b59-ace6-ab41c457fe39" class="">While The Bahamas is best known for its capital, Nassau, the country is made up of over 700 islands. Bahamians refer to these outer islands — each unique, but all interconnected — as the “family islands.” You’ll live with local hosts in Andros, Exuma, and Eleuthera, becoming part of communities devoted to supporting important natural industries and preserving a rapidly changing ecosystem.</p><p id="07a35fb8-00f9-4e06-8d33-467c9ab6e394" class="">
-</p><h2 id="152273e6-8b27-4ea5-8519-9ac78f343714" class="">Eight weeks. Three islands.</h2><h1 id="f9001f65-7faa-44e2-854e-f06bd3460072" class="">One life-changing sabbatical.</h1><p id="40304177-cfff-4ed1-9c8e-5ab8b6146030" class="">
-</p><p id="1ce42206-95ec-49ad-a081-0c374f3a4ddc" class="">
-</p><p id="08ae5be3-28b8-44e8-9643-f0795d056810" class=""><strong>© BeAForeigner Inc. 💜 2093 Philadelphia Pike #1106, Claymont, DE  19703</strong></p></div></article></body></html>
+<div style="font-size: 1.05em">
+<b>Posted:</b> Feb 16, 2020<br />
+<b>Company:</b> <a href="https://airbnb.com" target="_blank">Airbnb</a><br />
+<b>Location:</b> The Bahamas<br />
+<b>Type:</b> Contest<br />
+<b>Apply:</b> <a href="https://fgnr.me/cONyck" target="_blank">https://fgnr.me/cONyck</a><br />
+<b>Expires:</b> Feb 18, 2020<br />
+</div>
+	
+<br />
+
+<hr />
+
+<div style="font-size: 1.5em"><b>A once-in-a-lifetime opportunity to help preserve an archipelago</b></div><br />
+<div style="font-size: 1.05em">This April, you can live on three of The Bahamas’ family islands and become part of a passionate community in a country made up of more than 700 islands. You’ll spend two months helping expose its unique culture and rich natural resources to a new wave of visitors.
+	
+<br /><br />
+	
+<strong>Sabbatical runs April 1 to May 31, 2020.</strong>
+	
+<br /><br />
+	
+Terms: <a href="https://www.airbnb.com/d/bahamas_terms" target="_blank">https://www.airbnb.com/d/bahamas_terms</a>
+	
+<br /><br />
+
+While The Bahamas is best known for its capital, Nassau, the country is made up of over 700 islands. Bahamians refer to these outer islands — each unique, but all interconnected — as the “family islands.” You’ll live with local hosts in Andros, Exuma, and Eleuthera, becoming part of communities devoted to supporting important natural industries and preserving a rapidly changing ecosystem.
+</div>
+	
+<br />
+
+<div style="font-size: 1.6em">Eight weeks. Three islands.</div>
+<div style="font-size: 1.8em"><b>One life-changing sabbatical.</b></div>
+
+<br />
+
+<hr />
+
+<br />
+<div style="text-align:center; font-size: 0.7em">© <strong>BeAForeigner Inc.</strong> 💛 Made from the heart.<br />
+2093 Philadelphia Pike #1106 | Claymont, DE  19703</div>	
+</article>
+
+</body>
+</html>
