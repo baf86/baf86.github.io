@@ -582,6 +582,23 @@ blockquote {
 	margin-left: 2px;
 	margin-right: 5px;
 }
+	
+.social-links {
+  margin-top: 0.5em;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-left: 1em;
+      a.social-link-item {
+        color: #e93d2c;
+        &:hover,
+        &:focus {
+          color: lighten(#dc881e, 14%);
+        }
+      }
 </style>
 </head>
 	
@@ -943,7 +960,17 @@ blockquote {
 <hr />
 
 <div style="text-align:center; font-size: 0.8em">© <strong>BeAForeigner Inc.</strong> 💛 Made from the heart.
-2093 Philadelphia Pike #1106 | Claymont, DE  19703</div>
+2093 Philadelphia Pike #1106 | Claymont, DE  19703</div><br />
+<div class="social-links">
+  <ul>
+    {% if author.paypal %}<li><a aria-label="Love Elyse? Donate!" rel="noreferrer" href="https://liberapay.com/elyserobinson" class="social-link-item" target="_blank"><i class="fas fa-donate"></i></a></li>{% endif %}
+    {% if author.amazon-author %}<li><a aria-label="Love Elyse? Buy her something!" rel="noreferrer" href="https://{{ author.amazon-author }}" class="social-link-item" target="_blank"><i class="fab fa-amazon"></i></a></li>{% endif %}
+    {% if author.youtube %}<li><a aria-label="Go to Elyse's YouTube Channel" rel="noreferrer" href="http://youtube.com/elyserobinson" class="social-link-item" target="_blank"><i class="fab fa-youtube"></i></a></li>{% endif %}
+    {% if author.instagram %}<li><a aria-label="Go to Elyse's Instagram Page" rel="noreferrer" href="http://instagram.com/{{ author.instagram }}" class="social-link-item" target="_blank"><i class="fab fa-instagram"></i></a></li>{% endif %}
+    {% if author.facebook %}<li><a rel="noreferrer" href="http://facebook.com/{{ author.facebook }}" class="social-link-item" target="_blank"><i class="fab fa-facebook"></i></a></li>{% endif %}
+    {% if author.twitter %}<li><a aria-label="Go to Elyse's Twitter Page" rel="noreferrer" href="http://twitter.com/{{ author.twitter }}" class="social-link-item" target="_blank"><i class="fab fa-twitter"></i></a></li>{% endif %}
+  </ul>
+</div>
 
 </article>
 
