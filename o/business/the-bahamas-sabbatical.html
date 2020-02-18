@@ -1,12 +1,12 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>BeAForeigner | The Bahamas Sabbatical</title><style>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BeAForeigner | Head of People</title>	
+<link href="/fonts/css/all.css" rel="stylesheet"> <!--load all styles -->
+
+<style>
 /* webkit printing magic: print all background colors */
-html {
-	-webkit-print-color-adjust: exact;
-}
-* {
-	box-sizing: border-box;
-	-webkit-print-color-adjust: exact;
-}
 
 html,
 body {
@@ -16,88 +16,37 @@ body {
 @media only screen {
 	body {
 		margin: 2em auto;
-		max-width: 900px;
+		max-width: 95%;
+		max-height: 95%;
 		color: rgb(55, 53, 47);
 	}
 }
 
 body {
 	line-height: 1.5;
-	white-space: pre-wrap;
 }
-
+	
 a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
+a:link {
+  color: #2ab0fd;
 }
 
-.pdf-relative-link-path {
-	font-size: 80%;
-	color: #444;
+/* visited link */
+a:visited {
+  color: #fd512a;
 }
 
-h1,
-h2,
-h3 {
-	letter-spacing: -0.01em;
-	line-height: 1.2;
-	font-weight: 600;
-	margin-bottom: 0;
+/* mouse over link */
+a:hover {
+  color: #2ab0fd;
+  text-decoration: underline overline;
 }
 
-.page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
+/* selected link */
+a:active {
+  color: #bfcfd8;
 }
 
-h1 {
-	font-size: 1.875rem;
-	margin-top: 1.875rem;
-}
-
-h2 {
-	font-size: 1.5rem;
-	margin-top: 1.5rem;
-}
-
-h3 {
-	font-size: 1.25rem;
-	margin-top: 1.25rem;
-}
-
-.source {
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 1.5em;
-	word-break: break-all;
-}
-
-.callout {
-	border-radius: 3px;
-	padding: 1rem;
-}
-
-figure {
-	margin: 1.25em 0;
-	page-break-inside: avoid;
-}
-
-figcaption {
-	opacity: 0.5;
-	font-size: 85%;
-	margin-top: 0.5em;
-}
-
-mark {
-	background-color: transparent;
-}
-
-.indented {
-	padding-left: 1.5em;
-}
 
 hr {
 	background: transparent;
@@ -106,306 +55,14 @@ hr {
 	height: 1px;
 	visibility: visible;
 	border: none;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+	border-bottom: 1px solid #cfe5f1;
 }
 
 img {
-	max-width: 100%;
-}
-
-@media only print {
-	img {
-		max-height: 100vh;
-		object-fit: contain;
-	}
-}
-
-@page {
-	margin: 1in;
-}
-
-.collection-content {
-	font-size: 0.875rem;
-}
-
-.column-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.column {
-	padding: 0 1em;
-}
-
-.column:first-child {
-	padding-left: 0;
-}
-
-.column:last-child {
-	padding-right: 0;
-}
-
-.table_of_contents-item {
-	display: block;
-	font-size: 0.875rem;
-	line-height: 1.3;
-	padding: 0.125rem;
-}
-
-.table_of_contents-indent-1 {
-	margin-left: 1.5rem;
-}
-
-.table_of_contents-indent-2 {
-	margin-left: 3rem;
-}
-
-.table_of_contents-indent-3 {
-	margin-left: 4.5rem;
-}
-
-.table_of_contents-link {
-	text-decoration: none;
-	opacity: 0.7;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-}
-
-table,
-th,
-td {
-	border: 1px solid rgba(55, 53, 47, 0.09);
-	border-collapse: collapse;
-}
-
-table {
-	border-left: none;
-	border-right: none;
-}
-
-th,
-td {
-	font-weight: normal;
-	padding: 0.25em 0.5em;
-	line-height: 1.5;
-	min-height: 1.5em;
-	text-align: left;
-}
-
-th {
-	color: rgba(55, 53, 47, 0.6);
-}
-
-ol,
-ul {
-	margin: 0;
-	margin-block-start: 0.6em;
-	margin-block-end: 0.6em;
-}
-
-li > ol:first-child,
-li > ul:first-child {
-	margin-block-start: 0.6em;
-}
-
-ul > li {
-	list-style: disc;
-}
-
-ul.to-do-list {
-	text-indent: -1.7em;
-}
-
-ul.to-do-list > li {
-	list-style: none;
-}
-
-.to-do-children-checked {
-	text-decoration: line-through;
-	opacity: 0.375;
-}
-
-ul.toggle > li {
-	list-style: none;
-}
-
-ul {
-	padding-inline-start: 1.7em;
-}
-
-ul > li {
-	padding-left: 0.1em;
-}
-
-ol {
-	padding-inline-start: 1.6em;
-}
-
-ol > li {
-	padding-left: 0.2em;
-}
-
-.mono ol {
-	padding-inline-start: 2em;
-}
-
-.mono ol > li {
-	text-indent: -0.4em;
-}
-
-.toggle {
-	padding-inline-start: 0em;
-	list-style-type: none;
-}
-
-/* Indent toggle children */
-.toggle > li > details {
-	padding-left: 1.7em;
-}
-
-.toggle > li > details > summary {
-	margin-left: -1.1em;
-}
-
-.selected-value {
-	display: inline-block;
-	padding: 0 0.5em;
-	background: rgba(206, 205, 202, 0.5);
-	border-radius: 3px;
-	margin-right: 0.5em;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-	white-space: nowrap;
-}
-
-.collection-title {
-	display: inline-block;
-	margin-right: 1em;
-}
-
-time {
-	opacity: 0.5;
-}
-
-.icon {
-	display: inline-block;
-	max-width: 1.2em;
-	max-height: 1.2em;
-	text-decoration: none;
-	vertical-align: text-bottom;
-	margin-right: 0.5em;
-}
-
-img.icon {
-	border-radius: 3px;
-}
-
-.user-icon {
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	margin-right: 0.5rem;
-}
-
-.user-icon-inner {
-	font-size: 0.8em;
-}
-
-.text-icon {
-	border: 1px solid #000;
-	text-align: center;
-}
-
-.page-cover-image {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-	height: 30vh;
-}
-
-.page-header-icon {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
-
-.page-header-icon-with-cover {
-	margin-top: -0.72em;
-	margin-left: 0.07em;
-}
-
-.page-header-icon img {
-	border-radius: 3px;
-}
-
-.link-to-page {
-	margin: 1em 0;
-	padding: 0;
-	border: none;
-	font-weight: 500;
-}
-
-p > .user {
-	opacity: 0.5;
-}
-
-td > .user,
-td > time {
-	white-space: nowrap;
-}
-
-input[type="checkbox"] {
-	transform: scale(1.5);
-	margin-right: 0.6em;
-	vertical-align: middle;
-}
-
-p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-.image {
-	border: none;
-	margin: 1.5em 0;
-	padding: 0;
-	border-radius: 0;
-	text-align: center;
-}
-
-.code,
-code {
-	background: rgba(135, 131, 120, 0.15);
-	border-radius: 3px;
-	padding: 0.2em 0.4em;
-	border-radius: 3px;
-	font-size: 85%;
-	tab-size: 2;
-}
-
-code {
-	color: #eb5757;
-}
-
-.code {
-	padding: 1.5em 1em;
-}
-
-.code > code {
-	background: none;
-	padding: 0;
-	font-size: 100%;
-	color: inherit;
-}
-
-blockquote {
-	font-size: 1.25em;
-	margin: 1em 0;
-	padding-left: 1em;
-	border-left: 3px solid rgb(55, 53, 47);
-}
-
-.bookmark-href {
-	font-size: 0.75em;
-	opacity: 0.5;
+	
+	border: 1px solid #000000;
+	width: 150px;
+	height: auto;
 }
 
 .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
@@ -414,165 +71,186 @@ blockquote {
 .mono { font-family: Nitti, 'Microsoft YaHei', '微软雅黑', monospace; }
 .pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
 
-.pdf .code { font-family: Source Code Pro, 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+</style>
 
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, KaiTi, STKaiTi, '华文楷体', KaiTi_GB2312, '楷体_GB2312', serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+</head>
 
-.pdf .mono { font-family: PT Mono, Nitti, 'Microsoft YaHei', '微软雅黑', monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+<body>
 
-.highlight-default {
-}
-.highlight-gray {
-	color: rgb(155,154,151);
-}
-.highlight-brown {
-	color: rgb(100,71,58);
-}
-.highlight-orange {
-	color: rgb(217,115,13);
-}
-.highlight-yellow {
-	color: rgb(223,171,1);
-}
-.highlight-teal {
-	color: rgb(15,123,108);
-}
-.highlight-blue {
-	color: rgb(11,110,153);
-}
-.highlight-purple {
-	color: rgb(105,64,165);
-}
-.highlight-pink {
-	color: rgb(173,26,114);
-}
-.highlight-red {
-	color: rgb(224,62,62);
-}
-.highlight-gray_background {
-	background: rgb(235,236,237);
-}
-.highlight-brown_background {
-	background: rgb(233,229,227);
-}
-.highlight-orange_background {
-	background: rgb(250,235,221);
-}
-.highlight-yellow_background {
-	background: rgb(251,243,219);
-}
-.highlight-teal_background {
-	background: rgb(221,237,234);
-}
-.highlight-blue_background {
-	background: rgb(221,235,241);
-}
-.highlight-purple_background {
-	background: rgb(234,228,242);
-}
-.highlight-pink_background {
-	background: rgb(244,223,235);
-}
-.highlight-red_background {
-	background: rgb(251,228,228);
-}
-.block-color-default {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray {
-	color: rgba(55, 53, 47, 0.6);
-	fill: rgba(55, 53, 47, 0.6);
-}
-.block-color-brown {
-	color: rgb(100,71,58);
-	fill: rgb(100,71,58);
-}
-.block-color-orange {
-	color: rgb(217,115,13);
-	fill: rgb(217,115,13);
-}
-.block-color-yellow {
-	color: rgb(223,171,1);
-	fill: rgb(223,171,1);
-}
-.block-color-teal {
-	color: rgb(15,123,108);
-	fill: rgb(15,123,108);
-}
-.block-color-blue {
-	color: rgb(11,110,153);
-	fill: rgb(11,110,153);
-}
-.block-color-purple {
-	color: rgb(105,64,165);
-	fill: rgb(105,64,165);
-}
-.block-color-pink {
-	color: rgb(173,26,114);
-	fill: rgb(173,26,114);
-}
-.block-color-red {
-	color: rgb(224,62,62);
-	fill: rgb(224,62,62);
-}
-.block-color-gray_background {
-	background: rgb(235,236,237);
-}
-.block-color-brown_background {
-	background: rgb(233,229,227);
-}
-.block-color-orange_background {
-	background: rgb(250,235,221);
-}
-.block-color-yellow_background {
-	background: rgb(251,243,219);
-}
-.block-color-teal_background {
-	background: rgb(221,237,234);
-}
-.block-color-blue_background {
-	background: rgb(221,235,241);
-}
-.block-color-purple_background {
-	background: rgb(234,228,242);
-}
-.block-color-pink_background {
-	background: rgb(244,223,235);
-}
-.block-color-red_background {
-	background: rgb(251,228,228);
-}
-
-.checkbox {
-	display: inline-flex;
-	vertical-align: text-bottom;
-	width: 16;
-	height: 16;
-	background-size: 16px;
-	margin-left: 2px;
-	margin-right: 5px;
-}
-
-.checkbox-on {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
+<article id="5fdd694a-cb78-46d2-a286-fb84df88a3b1" class="page sans">
 	
-</style></head><body><article id="5fdd694a-cb78-46d2-a286-fb84df88a3b1" class="page sans"><header><div class="page-header-icon undefined">
+<div style="text-align: center; font-size: 1.1em">
+<a href="https://beaforeigner.com/o/about">ABOUT</a> | <a href="https://beaforeigner.com/o/post">POST FOR $99</a> | <a href="https://beaforeigner.com/o/book">BOOK</a> | <a href="https://beaforeigner.com/o/search"><i class="fas fa-search-dollar"></i></a><br />
+<a rel="noreferrer" href="https://liberapay.com/elyserobinson" target="_blank"><i class="fas fa-donate"></i></a> &nbsp; 
+<a rel="noreferrer" href="https://amazon.com/hz/wishlist/ls/1TGA5YKKAJ16E" target="_blank"><i class="fab fa-amazon"></i></a> &nbsp; 
+<a rel="noreferrer" href="http://youtube.com/elyserobinson" target="_blank"><i class="fab fa-youtube"></i></a> &nbsp; 
+<a rel="noreferrer" href="http://instagram.com/beaforeignercom" target="_blank"><i class="fab fa-instagram"></i></a> &nbsp; 
+<a rel="noreferrer" href="http://facebook.com/beaforeignercom" target="_blank"><i class="fab fa-facebook"></i></a> &nbsp; 
+<a rel="noreferrer" href="http://twitter.com/beaforeigner" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
 
+<br />	
+	
 <picture>
-  <source srcset="/img/airbnb.webp" type="image/webp">
-  <source srcset="/img/airbnb.jpg" type="image/jpeg"> 
-<img src="/img/airbnb.jpg">
+  <source srcset="/o/business/img/scott.webp" type="image/webp">
+  <source srcset="/o/business/img/scott.jpg" type="image/jpeg"> 
+<img src="/o/business/img/scott.jpg">
 </picture>
+	
+<br /><br />
+	
+<div style="font-size: 2em"><b>Head of People</b></div>
+	
+<br />
 
-</div><h1 class="page-title">Copy of The Bahamas Sabbatical</h1><table class="properties"><tbody><tr class="property-row property-row-created_time"><th>Job Posted</th><td><time>@Feb 16, 2020 1:22 AM</time></td></tr><tr class="property-row property-row-multi_select"><th>Location</th><td></td></tr></tbody></table></header><div class="page-body"><h1 id="ee3ec53b-2b41-4618-9197-9f90a607ad14" class="">A once-in-a-lifetime opportunityto help preserve an archipelago</h1><p id="6f38490f-e442-44fd-9743-6cfd2a9e789f" class="">This April, you can live on three of The Bahamas’ family islands and become part of a passionate community in a country made up of more than 700 islands. You’ll spend two months helping expose its unique culture and rich natural resources to a new wave of visitors.
-</p><p id="f987fab8-383f-45ce-8b1e-c25650827a73" class=""><strong>Sabbatical runs April 1 to May 31, 2020.</strong></p><p id="1e5e0de7-8160-4214-865a-7744aaf3c9f0" class="">Terms: <a href="https://www.airbnb.com/d/bahamas_terms">https://www.airbnb.com/d/bahamas_terms</a></p><p id="8fb008af-7b79-40be-9cfc-888c49831b67" class="">
-</p><p id="632c25fe-88c7-4b59-ace6-ab41c457fe39" class="">While The Bahamas is best known for its capital, Nassau, the country is made up of over 700 islands. Bahamians refer to these outer islands — each unique, but all interconnected — as the “family islands.” You’ll live with local hosts in Andros, Exuma, and Eleuthera, becoming part of communities devoted to supporting important natural industries and preserving a rapidly changing ecosystem.</p><p id="07a35fb8-00f9-4e06-8d33-467c9ab6e394" class="">
-</p><h2 id="152273e6-8b27-4ea5-8519-9ac78f343714" class="">Eight weeks. Three islands.</h2><h1 id="f9001f65-7faa-44e2-854e-f06bd3460072" class="">One life-changing sabbatical.</h1><p id="40304177-cfff-4ed1-9c8e-5ab8b6146030" class="">
-</p><p id="1ce42206-95ec-49ad-a081-0c374f3a4ddc" class="">
-</p><p id="08ae5be3-28b8-44e8-9643-f0795d056810" class=""><strong>© BeAForeigner Inc. 💜 2093 Philadelphia Pike #1106, Claymont, DE  19703</strong></p></div></article></body></html>
+<div style="font-size: 1.05em">
+<b>Posted:</b> Feb 18, 2020<br />
+<b>Company:</b> <a href="https://www.scottscheapflights.com" target="_blank">Scott's Cheap Flights</a><br />
+<b>Location:</b> Remote<br />
+<b>Type:</b> Human Resources<br />
+<b>Apply:</b> <a href="https://fgnr.me/uKCVAA" target="_blank">https://fgnr.me/uKCVAA</a><br />
+<b>Expires:</b> Unknown<br />
+<br />
+🏆 <i><a href="https://www.cignaglobal.com/quote/pages/quote/PersonalInformationLiteV3.html?AffinityPartner=0c87bfca9d32b49102c4c37a2e8f1a1b&utm_source=broker&utm_medium=tlink&utm_campaign=NE10473370" target="_blank">Cigna Global</a> - International private medical insurance plan to meet the needs of expatriates and globally mobile individuals</i><br />
+</div>
+	
+<br />
+
+<hr />
+<br />
+<div style="font-size: 1.05em">
+As Head of People, you will be responsible for the entire People/HR function at Scott's Cheap Flights. This includes performance management, learning and development, D&I, hiring, team retreats, succession planning, change management, talent acquisition, payroll and PEO management, HR laws and regulations, total rewards, and generally working to improve the company culture and employee experience each and every day. You will be an HR business partner to the leadership team and a resource for the entire company for HR-related topics. You will work to build relationships of trust and respect with everyone at the company as we scale from 35 to 75+ employees. You will be a part of the Scott's Cheap Flights Leadership Team and will report directly to the CEO.<br /><br />
+	
+🤤 <i><a href="http://ubr.to/EatsGiveGet" target="_blank">Uber Eats</a> - Want food delivered straight to your home from your favorite restauarant? Try us with some free money!</i><br /><br />
+
+<b>In the short term, you will:</b>
+<ul>
+<li>Meet with everyone at the company to learn about the SCF company culture and identify our areas of strength and our areas of improvement</li>
+<li>Work with managers to build out a performance management plan to ensure every employee is receiving the necessary feedback to continue leveling up and progressing in their career</li>
+<li>Complete an HR audit and employee engagement survey and use this to build a 6 month plan for the People/HR function</li>
+<li>Join the weekly leadership team meetings and quarterly leadership onsites</li>
+<li>Create a budget for the People/HR function for the remainder of 2020, including hiring plans</li>
+</ul>
+<br />
+🚗 <i><a href="https://www.uber.com/invite/elyser416ui" target="_blank">Uber</a> - Try Uber with a free ride!</i><br /><br />
+	
+<b>In the long term, you will:</b>
+<ul>
+<li>Build and coach a team of People Operations professionals that work towards creating an exceptional employee experience</li>
+<li>Establish a culture of feedback through performance management and a culture of continual improvement through learning and development initiatives</li>
+<li>Ensure SCF is an inclusive and diverse place to work where everyone can be themselves and thrive as we work towards our mission and vision</li>
+<li>Develop an employer branding strategy that ensure Scott's Cheap Flights is recognized as go-to organization for leaders and staff</li>
+</ul>
+	
+<br />
+🔥 <i><a href="http://geta.raise.com/erobinson6" target="_blank" rel="noopener noreferrer">Raise</a> - Get $5 and the best place for discounted gift cards</i><br /><br />
+	
+<b>What you bring to the table:</b>
+<ul>
+<li>Leadership Team Experience: You have previous experience as a member of a leadership team, driving strategic decisions and collaborating cross-functionally. You understand the need for healthy debate and thrive in a feedback-driven environment.</li>
+<li>Team Leadership + Management: You have at least five years of experience leading highly capable people teams, with demonstrated success hiring, developing, and mentoring a team of people/HR professionals, ideally in a distributed environment.</li>
+<li>Data Driven: You are obsessed with data analysis and hypothesis-driven experimentation.</li>
+<li>Performance Management: You have experience building out performance management systems and tools that directly contribute to higher employee engagement and achievement of company goals.</li>
+<li>Remote Culture: You understand what it takes to build an amazing company culture so well that you can do it without everyone being in the same location.</li>
+<li>Diversity, Equity, & Inclusion: You believe in and advocate for DEI initiatives and ensure that all employees, no matter their background, are welcome and can thrive at SCF.</li>
+<li>Total Rewards: You understand compensation banding and total rewards and ensure all of our employees are compensated fairly and competitively.</li>
+<li>Legal & Compliance: You're an HR expert, especially in a remote environment, and can ensure that SCF is compliant with all HR laws.</li>
+<li>Learning & Development: You understand the value of continual learning and have experience building L&D resources for employees.</li>
+<li>Change Management: You've been through company growth and changes multiple times before and can provide advice and strategies for change management both to the leadership team and employees.</li>
+</ul>
+	
+<br />
+🤐 <i><a href="https://baselang.com/signup/?referral=yours1%40elysey.com" target="_blank" rel="noopener noreferrer">BaseLang</a> - The website I've been using to learn Spanish with unlimited lessons for $149 per month.</i><br /><br />	
+
+<b>Must have's:</b>
+<ul>
+<li>Clear and concise verbal and written communication skills</li>
+<li>Ability to jump between high level strategy and tactical execution, especially early on</li>
+<li>Experience working with a company as it went through multiple stages of growth</li>
+<li>Experience working remotely</li>
+<li>Must be legally authorized to work in the United States and plan to work full-time in the United States</li>
+</ul>
+<br />
+🗿 <i><a href="https://www.groupon.com/visitor_referral/h/ee4bce1e-84de-4387-a735-d59d04539960" target="_blank" rel="noopener noreferrer">Groupon</a> - Have used this web site for YEARS to find all kinds of deals in multiple cities all over the world.</i>
+<br /><br />	
+<b>Nice to have's:</b>
+<ul>
+<li>Advanced HR certification(s)</li>
+<li>Experience working with a B2C company</li>
+<li>Experience working within the travel industry</li>
+</ul>
+<br />
+🛴 <i><a href="https://www.awin1.com/awclick.php?gid=385121&mid=11018&awinaffid=323811&linkid=2598552&clickref=" target="_blank" rel="noopener noreferrer">Viator</a> - Get $10 free</i>
+<br /><br />	
+<b>Why you might love working here:</b>
+<ul>
+<li>100% remote work environment, so go ahead and bring your dog to work or wear your PJ's to the office!</li>
+<li>Open vacation policy, with a 3 week minimum!</li>
+<li>Comprehensive health, vision, and dental insurance</li>
+<li>401(k) with a 5% match</li>
+<li>Up to 12-weeks of paid family leave</li>
+<li>Meetup meals when you cross paths with a co-worker</li>
+<li>Continuing education & development reimbursement</li>
+<li>Yearly team retreat (this year we went to Riviera Maya!)</li>
+<li>Challenging problems to solve and an awesome team to collaborate with every single day</li>
+</ul>
+<br />
+⛱️ <i><a href="https://www.visahq.com/?a_aid=vaff9616" target="_blank" rel="noopener noreferrer">VisaHQ</a> - Help in obtaining your visa if needed</i>
+<br /><br />		
+<br />
+We want you to bring your whole self to work every single day. We accept you for who you are and consider everyone on an equal opportunity basis without regard to race, national origin, color, religion, gender, gender identity or expression, sexual orientation, genetics, disability, age, or veteran status.
+	
+<br /><br />
+⚓ <i><a href="https://www.booking.com/index.html?aid=1953880" target="_blank" rel="noopener noreferrer">Booking.com</a> - Get 20% off hotels</i>
+<br />
+	
+</div>
+
+<br />
+
+<hr />
+
+<!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	align: center;
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://beaforeigner.us4.list-manage.com/subscribe/post?u=1b6546c5d7f257fd8c46fe054&amp;id=fbf235f08d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL">Subscribe to daily updates...</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1b6546c5d7f257fd8c46fe054_fbf235f08d" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+<!--End mc_embed_signup-->
+<hr />
+<div style="text-align:right; font-size: 0.9em"><a href="#" onclick="history.go(-1)">Go back</a></div>
+
+<br />
+<div style="text-align:center; font-size: 0.8em">© 2020 <strong>BeAForeigner Inc.</strong> 💛 Made from the heart.<br />
+2093 Philadelphia Pike #1106 | Claymont, DE  19703</div>
+<div style="text-align:center">
+<a rel="noreferrer" href="https://liberapay.com/elyserobinson" target="_blank"><i class="fas fa-donate"></i></a> &nbsp; 
+<a rel="noreferrer" href="https://amazon.com/hz/wishlist/ls/1TGA5YKKAJ16E" target="_blank"><i class="fab fa-amazon"></i></a> &nbsp; 
+<a rel="noreferrer" href="http://youtube.com/elyserobinson" target="_blank"><i class="fab fa-youtube"></i></a> &nbsp; 
+<a rel="noreferrer" href="http://instagram.com/beaforeignercom" target="_blank"><i class="fab fa-instagram"></i></a> &nbsp; 
+<a rel="noreferrer" href="http://facebook.com/beaforeignercom" target="_blank"><i class="fab fa-facebook"></i></a> &nbsp; 
+<a rel="noreferrer" href="http://twitter.com/beaforeigner" target="_blank"><i class="fab fa-twitter"></i></a>
+<br /><br />
+<a href="https://beaforeigner.com/about">ABOUT</a> | <a href="https://beaforeigner.com/post">POST FOR $99</a> | <a href="https://beaforeigner.com/book">BOOK</a> | <a href="https://beaforeigner.com/contact">CONTACT</a> | <a href="https://beaforeigner.com/o/search"><i class="fas fa-search-dollar"></i></a><br />
+</div>
+<br />
+	
+<div style="text-align:center; font-size: 1em">⛅ <i><a href="joinhoney.com/ref/759tu9o" target="_blank" rel="noopener noreferrer">Honey</a> - Find coupons and great deals whenever you shop online</i></div>
+
+</article>
+
+</body>
+</html>
