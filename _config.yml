@@ -3,7 +3,7 @@ url: "https://elyserobinson.com"
 baseurl: "/"
 
 markdown: kramdown
-#ins_logo: "./bits-logo.png"
+ins_logo: "/img/me.jpg"
 
 tracking_id: UA-79873299-2
 

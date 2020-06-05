@@ -6,40 +6,36 @@ layout: default
 
 <img class="profile-picture" src="/img/me.jpg">
 
-Hi! I am a junior year student of B.E. Computer Science at Birla Institute of Technology and Science, Pilani.
+Without a plan, Elyse Y. Robinson moved to Mexico City after her mother passed away from blood cancer. She never heard of Mexico City nor even visited Mexico before. She just knew she had to escape to mourn. She is going into her fourth year here while building <a href="https://www.beaforeigner.com">BeAForeigner Inc.</a>
 
-This is a jekyll based resume template. You can find the full source code on [GitHub](https://github.com/bk2dcradle/researcher)
+{% for post in paginator.posts %}
 
-## Research Interest
+<a name="top"><img src="{{ post.thumbnail }}" width="150" height="150"></a>
+<h2><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+{{ post.excerpt }}<br>
+{{post.date | date: '%Y, %b %d'}} &nbsp; | &nbsp;
+{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus ipsum ac erat aliquam dapibus. Vestibulum vehicula placerat ex, a consectetur odio pharetra quis. Mauris id urna ante. Fusce pharetra diam ac nisi aliquet, vel egestas ex iaculis. Pellentesque laoreet cursus tellus sed pellentesque. Praesent a rhoncus elit. Nunc ipsum nisl, consequat sit amet pretium quis, gravida id ipsum.
+{% endunless %}
+{% endfor %}
 
-## Publications
+<hr>
 
-1. F.Bar, J.Doe: Effects of having a placeholder of a name
-2. S.Holmes, J.Watson: Consequences of living with a sociopath in London
+<img src="/img/readmore.gif" width="50" height="50" alt="Read More"><div style="text-align: center; font-size: 30px; font-weight: bold;">Go to More Posts</div>
+<!-- Pagination links -->
+<div style="text-align: center; font-weight: bold italic;">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a> &nbsp;
+  {% else %}
 
-## Typography
+  {% endif %}
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  {% if paginator.next_page %}
+     &nbsp; <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
 
-This is a [link](http://google.com). Something *italics* and something **bold**.
-
-Here is a table
-
-Year | Award | Category
------|-------|--------
-2014 | Emmy  | Won Outstanding Lead Actor in a miniseries or a movie
-2015 | BAFTA | Nominated for Best Leading Actor for Sherlock
-2014 | Satellite | Won Best Actor miniseries or television film
-
-Here is a horizontal rule
-
----
-
-Here is a blockquote
-
-> To a great mind, nothing is little
-
-## References
-
-* Foo Bar: Head of Department, Placeholder Names, Lorem
-* John Doe: Associate Professor, Department of Computer Science, Ipsum
+  {% endif %}
+</div>
+  <br>
+   <div style="text-align: center; font-size: 30px; font-weight: bold;"><a href="https://elyserobinson.com/archives">Go to A List of Posts (Archives)</a>
+</div>
