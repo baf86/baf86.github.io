@@ -15,15 +15,7 @@ Without a plan, Elyse Y. Robinson moved to Mexico City after her mother passed a
       <span class="post-date">
         {{ post.date | date: "%-d %b %Y" | upcase }}
       </span>
-      {% if post.categories.size > 0 %}
-      •
-      {% for cat in post.categories %}
-        <a class="post-cat" href="{{ site.url }}/categories/#{{ cat }}">{{ cat }}</a>
-        {% unless forloop.last %}
-        <span>/</span>
-        {% endunless %}
-      {% endfor %}
-      {% endif %}
+
     </p>
     <h4>
       <a href="{{ site.url }}{{ post.url }}" class="post-title" title="{{ post.title | escape }}">{{ post.title }}</a>
@@ -66,8 +58,6 @@ Without a plan, Elyse Y. Robinson moved to Mexico City after her mother passed a
 
 </section>
 {% endfor %}
-
-<hr>
 
 {% for post in paginator.posts %}
 
