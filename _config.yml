@@ -2,6 +2,7 @@ title: Elyse Y. Robinson | Black American Woman in México
 url: "https://elyserobinson.com"
 baseurl: "/"
 description: Story of one Black American woman's adventures in México...
+timezone: Americas/Mexico_City
 
 markdown: kramdown
 ins_logo: "/img/me.jpg"
@@ -43,4 +44,4 @@ plugins:
   - jekyll-seo-tag
 
 paginate: 7
-paginate_path: "/page:num/"
+paginate_path: "pages/page:num/"
