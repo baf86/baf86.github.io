@@ -16,22 +16,24 @@ sass:
     sass_dir: _sass
 
 nav:
- - name: "about"
+ - name: "home"
+   link: "/"
+ - name: "about elyse"
    link: "/about"
- - name: "archives"
-   link: "/archives"
- - name: "contact"
-   link: "/contact"
  - name: "beaforeigner"
    link: "/beaforeigner"
  - name: "insurance"
    link: "/insurance"
  - name: "podcast-youtube"
    link: "/podcast-youtube"
- - name: "search"
-   link: "/search"
  - name: "travel-deals"
    link: "/travel-deals"
+ - name: "search"
+   link: "/search"
+ - name: "archives"
+   link: "/archives"
+ - name: "contact"
+   link: "/contact"
 
 plugins:
   - jekyll-feed
