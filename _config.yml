@@ -3,8 +3,7 @@ url: "https://elyserobinson.com"
 baseurl: "/"
 description: Story of one Black American woman's adventures in México...
 timezone:          Americas/Mexico_City
-excerpt_separator: <!--more-->
-permalink:         /:title
+
 
 
 markdown: kramdown
