@@ -84,9 +84,9 @@
                 {{ content }}
                 {% if site.footer == true %}
                     <hr />
-                    <p style="text-align: center; margin-bottom: 10px">
-                    <a href="{{ site.footer_url }}" style="color: black"><small>{{ site.footer_text }}</small></a>
-                    </p>
+                    <div style="text-align: center;">
+                    &copy; {{ site.time | date: '%Y' }} {{ site.owner.name }} | made with <img src="/img/running-heart.gif" width="45" height="45" alt="Made with love by Elyse Y. Robinson">
+                    </div>
                 {% endif %}
             </div>
     </div>
