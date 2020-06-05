@@ -23,13 +23,6 @@ Without a plan, Elyse Y. Robinson moved to Mexico City after her mother passed a
       <a class="post-title-link" href="{{ post.link }}" target="_blank" title="{{ post.title | escape }}"><i class="fa fa-external-link"></i></a>
       {% endif %}
     </h4>
-
-    {% if post.author %}
-      {% assign author = site.data.authors[post.author] %}
-    {% else %}
-      {% assign author = site.owner %}
-    {% endif %}
-
     </header>
 
     {% if post.excerpt %}
@@ -50,11 +43,6 @@ Without a plan, Elyse Y. Robinson moved to Mexico City after her mother passed a
       {% endif %}
       alt="{{ post.title | escape }} feature image">
 
-      {% if post.image.credit %}
-      <span class="image-credit">Photo Credit: <a href="{{ post.image.creditlink }}">{{ post.image.credit }}</a></span>
-      {% endif %}
-    </div><!-- /.image-wrap -->
-    {% endif %}
 
 </section>
 {% endfor %}
