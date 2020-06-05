@@ -1,0 +1,36 @@
+permalink: /:title
+markdown: kramdown
+
+gems:
+  - jekyll-sitemap
+
+name: Elyse Y. Robinson | Black American Woman in México
+short_name: "Elyse Y. Robinson"
+author: Elyse Y. Robinson
+title: Elyse Y. Robinson | Black American Woman in México
+url: https://elyserobinson.com
+description: A fantastic blog that is fantastic.
+email:
+keywords: ["change architect", "black american expat", "black american immigrant", "black american in mexico", "black american podcast", "beaforeigner", "black and overseas", "black blogger"]
+language: "en"
+lang_direction: "ltr"
+color: "#abc123"
+timezone: Americas/Mexico_City
+avatar: /img/me.jpg
+twitter: mselyserobinson
+amazon-author: amazon.com/hz/wishlist/ls/1TGA5YKKAJ16E
+facebook: mselyserobinson
+paypal: https://paypal.me/sugarcollins
+google:
+    analytics: UA-79873299-2
+instagram: mselyserobinson
+youtube: elyserobinson
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+paginate: 7
+paginate_path: "/pages/page:num/"
