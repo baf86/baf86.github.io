@@ -7,48 +7,6 @@ timezone:          Americas/Mexico_City
 excerpt_separator: <!--more-->
 permalink:         /:title
 
-owner:
-  name: elyse y. robinson
-  avatar: me.jpg
-  job: "Story of one Black American woman's adventures in México 🌮"
-  bio: "Change Architect 💰 BeAForeigner Inc."
-  email:
-  disqus-shortname:
-  twitter: mselyserobinson
-  amazon-author: amazon.com/hz/wishlist/ls/1TGA5YKKAJ16E
-  facebook: mselyserobinson
-  paypal: https://paypal.me/sugarcollins
-  google:
-    plus: #username
-    analytics: UA-79873299-2
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
-  github:
-  gitlab: #username
-  stackoverflow:
-  linkedin:
-  skype:
-  xing: #username
-  instagram: mselyserobinson
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble:
-  youtube: elyserobinson
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  500px: #username
-  codepen:
-  reddit: #username
-  telegram: #username
-  tripadvisor :
-  strava:
-
 markdown: kramdown
 ins_logo: "/img/me.jpg"
 
