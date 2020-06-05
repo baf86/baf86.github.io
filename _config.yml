@@ -2,7 +2,9 @@ title: Elyse Y. Robinson | Black American Woman in México
 url: "https://elyserobinson.com"
 baseurl: "/"
 description: Story of one Black American woman's adventures in México...
-keywords: ["change architect", "black american expat", "black american immigrant", "black american in mexico", "black american podcast", "beaforeigner", "black and overseas", "black blogger"]
+timezone:          Americas/Mexico_City
+excerpt_separator: <!--more-->
+permalink:         /:title
 
 
 markdown: kramdown
