@@ -57,15 +57,12 @@ Without a plan, Elyse Y. Robinson moved to Mexico City after her mother passed a
   </div>
 {% endfor %}
 
-<img src="/img/readmore.gif" width="50" height="50" alt="Read More"><div style="text-align: center; font-size: 30px; font-weight: bold;">Go to More Posts</div>
-
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">
-      <div style="text-align: center; font-weight: bold italic;">
-Previous
-    </a> &nbsp;
+      Previous
+    </a>
   {% else %}
     <span class="previous">Previous</span>
   {% endif %}
@@ -77,7 +74,6 @@ Previous
   {% else %}
     <span class="next ">Next</span>
   {% endif %}
-</div>
 </div>
 
 <br>
