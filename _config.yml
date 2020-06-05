@@ -44,4 +44,4 @@ plugins:
   - jekyll-seo-tag
 
 paginate: 7
-paginate_path: "pages/page:num/"
+paginate_path: "/pages/page:num/"
