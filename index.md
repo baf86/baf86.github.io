@@ -42,39 +42,44 @@ Without a plan, Elyse Y. Robinson moved to Mexico City after her mother passed a
       "{{ site.url }}/img/{{ post.image.feature }}"
       {% endif %}
       alt="{{ post.title | escape }} feature image">
-
-
 </section>
-{% endfor %}
-
-{% for post in paginator.posts %}
-
-<a name="top"><img src="{{ post.thumbnail }}" width="150" height="150"></a>
-<h2><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-{{ post.excerpt }}<br>
-{{post.date | date: '%Y, %b %d'}} &nbsp; | &nbsp;
-{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}
-
-{% endunless %}
 {% endfor %}
 
 <hr>
 
+{% for post in paginator.posts %}
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="author">
+    <span class="date">{{ post.date }}</span>
+  </p>
+  <div class="content">
+    {{ post.content }}
+  </div>
+{% endfor %}
+
 <img src="/img/readmore.gif" width="50" height="50" alt="Read More"><div style="text-align: center; font-size: 30px; font-weight: bold;">Go to More Posts</div>
+
 <!-- Pagination links -->
-<div style="text-align: center; font-weight: bold italic;">
+<div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a> &nbsp;
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+      <div style="text-align: center; font-weight: bold italic;">
+Previous
+    </a> &nbsp;
   {% else %}
-
+    <span class="previous">Previous</span>
   {% endif %}
+  <span class="page_number ">
     Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
   {% if paginator.next_page %}
-     &nbsp; <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
   {% else %}
-
+    <span class="next ">Next</span>
   {% endif %}
 </div>
-  <br>
-   <div style="text-align: center; font-size: 30px; font-weight: bold;"><a href="https://elyserobinson.com/archives">Go to A List of Posts (Archives)</a>
+</div>
+
+<br>
+<div style="text-align: center; font-size: 30px; font-weight: bold;"><a href="https://elyserobinson.com/archives">Go to A List of Posts (Archives)</a>
 </div>
