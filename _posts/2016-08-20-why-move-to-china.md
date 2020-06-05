@@ -14,7 +14,7 @@ My reasoning for going overseas is I got tired of the 40+ hour work weeks and no
 
 ⚓ <i><a href="https://www.booking.com/index.html?aid=1953880" target="_blank">Booking.com</a> - Get 20% off hotels</i><br>
 
-I first tried in 2013 when I worked for the IRS and the whole government sequestration was going on. They docked 3 days of my pay and the government shutdown for 12 days (I got back paid though for that). I realized this country was crumbling into pieces and tried to go to South Korea on their <a href="http://epik.kr/">EPIK</a> program. I went through the motions and collected the documents but I didn't get a position. I also got a teaching position in China but my mother refused to let me go. So I didn't go...
+I first tried in 2013 when I worked for the IRS and the whole government sequestration was going on. They docked 3 days of my pay and the government shutdown for 12 days (I got back paid though for that). I realized this country was crumbling into pieces and tried to go to South Korea on their <a href="https://epik.kr/">EPIK</a> program. I went through the motions and collected the documents but I didn't get a position. I also got a teaching position in China but my mother refused to let me go. So I didn't go...
 
 Fast forward 3 more years...still working for the feds and entrenched in a career. That itch came back again. Plus I wasn't getting the support I needed and wanted in my current job. My current job gave me the skills to stand up in front of people and lecture without fear so I'll give that to them. So I started looking at teaching again, but this time I had more experience, was older, and wiser. I applied again to the EPIK program but they rejected me.
 

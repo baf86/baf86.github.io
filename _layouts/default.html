@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-
+    <link rel='manifest' href='/manifest.json'>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="blog, accent, {{ site.author }}, {{ site.title }}, jekyll">
@@ -101,6 +101,17 @@
           ga('send', 'pageview');
         </script>
     {% endif %}
+
+<script>
+// This is the "Offline page" service worker
+
+// Add this below content to your HTML page inside a <script type="module"></script> tag, or add the js file to your page at the very top to register service worker
+
+import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+const el = document.createElement('pwa-update');
+document.body.appendChild(el);
+</script>
+
 </body>
-<footer>
-</footer>
+</html>

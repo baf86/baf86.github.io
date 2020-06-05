@@ -10,7 +10,7 @@ categories: [China]
 
 <img src="/img/countdown.jpg" width="300" height="300" alt="Countdown">
 
-I received my visa yesterday. I highly recommend <a href="http://www.mychinavisa.com">China Visa Service Center</a>. They helped me over the phone very quickly and easily when I had questions about the Visa Form. Total fee for regular service was $128 which I mailed off 8/10 and received back 8/18 to their San Francisco office. I believe this is fair to not have to drive back and forth to San Francisco twice to pick up my passport. It can take 3+ hours to drive a little over 100 miles to the Bay area and that's not including tolls and parking.
+I received my visa yesterday. I highly recommend <a href="https://www.mychinavisa.com">China Visa Service Center</a>. They helped me over the phone very quickly and easily when I had questions about the Visa Form. Total fee for regular service was $128 which I mailed off 8/10 and received back 8/18 to their San Francisco office. I believe this is fair to not have to drive back and forth to San Francisco twice to pick up my passport. It can take 3+ hours to drive a little over 100 miles to the Bay area and that's not including tolls and parking.
 
 🗿 <i><a href="https://www.groupon.com/visitor_referral/h/ee4bce1e-84de-4387-a735-d59d04539960" target="_blank">Groupon</a> - Have used this web site for YEARS to find all kinds of deals in multiple cities all over the world.</i><br>
 

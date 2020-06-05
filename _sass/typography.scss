@@ -2,7 +2,8 @@
 
 .content {
     a:hover {
-        text-decoration: underline;
+        text-decoration: underline overline;
+        color: #40c1dd;
     }
     ol {
         counter-reset: list;
@@ -55,6 +56,6 @@
     }
     img {
         text-align: center;
-        width: 100%;
+        
     }
 }

@@ -16,10 +16,11 @@ body {
 }
 a {
     text-decoration: none;
-    color: $accent;
+    color: #f84279;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline overline;
+    color: #40c1dd;
 }
 hr {
     border: 0;
@@ -34,7 +35,7 @@ hr {
 
 #author-name {
     font-size: 30px;
-    color: #272727;
+    color: #000000;
     display: inline-block;
 }
 .navbar {
