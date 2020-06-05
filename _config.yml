@@ -1,10 +1,55 @@
-permalink: /posts/:title
+title: Elyse Y. Robinson
+url: "https://elyserobinson.com"
+baseurl: "https://elyserobinson.com/"
+
 markdown: kramdown
+#ins_logo: "./bits-logo.png"
 
-gems:
+tracking_id: UA-79873299-2
+
+footer: yes
+footer_url: "https://elyserobinson.com"
+footer_text: "&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }} | made with <img src="/img/running-heart.gif" width="45" height="45" alt="Made with love by Elyse Y. Robinson">"
+
+sass:
+    style: compressed
+    sass_dir: _sass
+
+nav:
+ - name: "about"
+   link: "/about"
+ - name: "archives"
+   link: "/archives"
+ - name: "contact"
+   link: "/contact"
+ - name: "beaforeigner"
+   link: "/beaforeigner"
+ - name: "contact"
+   link: "/contact"
+ - name: "insurance"
+   link: "insurance"
+ - name: "podcast-youtube"
+   link: "/podcast-youtube"
+ - name: "search"
+   link: "/search"
+ - name: "travel-deals"
+   link: "/travel-deals"
+
+description: Story of one Black American woman's adventures in México 🌮
+twitter_username: mselyserobinson
+ins_logo: /img/me.jpg
+twitter: mselyserobinson
+amazon-author: amazon.com/hz/wishlist/ls/1TGA5YKKAJ16E
+facebook: mselyserobinson
+paypal: https://paypal.me/sugarcollins
+instagram: mselyserobinson
+youtube: elyserobinson
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-seo-tag
 
-name: Zach Holman
-url: https://zachholman.com/left
-description: A fantastic blog that is fantastic.
-twitter: holman
+paginate: 7
+paginate_path: "/pages/page:num/"

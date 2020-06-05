@@ -1,60 +1,60 @@
-# Left
+# Researcher
 
-Left is a clean, whitespace-happy layout for [Jekyll](https://github.com/mojombo/jekyll).
+### [Demo Website](http://ankitsultana.com/researcher)
 
-This is designed to be an easy layout to modify for your own blog. It was
-extracted from [zachholman.com](http://zachholman.com/), which means it was
-battle-hardened from years of posting serious blog posts about emoji and swear
-words.
+A clean, single column, monospace resume template built for jekyll
 
-You can see it live right here: <http://zachholman.com/left/>
+### Installation
 
-![Left](http://cl.ly/image/3S2r1p2C0E2B/content)
+Simply fork the repository and edit away.
 
-## Installation
+#### Installation via remote themes
 
-- [Fork this repository](https://github.com/holman/left/fork)
-- Clone it: `git clone https://github.com/YOUR-USER/left`
-- Install ruby things: `bundle install` (if this doesn't work, look into [installing Bundler](http://bundler.io))
-- Start it up: `script/server`
+* Just setting `remote_theme: ankitsultana/researcher@gem` in `_config.yml` should work. Although in that case, I am not sure how
+you would build your site locally for testing. If you know how, open up an issue and let me know.
+* For more info, [refer this](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/).
 
-You should have a server up and running locally at <http://localhost:4000>.
+### Customization
 
-## Customization
+* You can edit the `.md` (markdown) files as you see fit. You can also add some other markdown file, say `foo.md` in the root directory of the repository. It will then be accessible like so `{{ url of your website }}/foo`.
 
-Next you'll want to change a few things. Most of them can be changed directly in
-[_config.yml](https://github.com/holman/left/blob/gh-pages/_config.yml). That's
-where we'll pull your name, Twitter username, and things like that.
+* You can of course remove `contact.md` if you don't want it
 
-There's a few other places that you'll want to change, too:
+* To set the heading, edit the `title` variable in `_config.yml`
 
-- [CNAME](https://github.com/holman/left/blob/gh-pages/CNAME): If you're using
-  this on GitHub Pages with a custom domain name, you'll want to change this
-  to be the domain you're going to use. All that should be in here is a
-  domain name on the first line and nothing else (like: `example.com`).
-- [favicon.ico](https://github.com/holman/left/blob/gh-pages/favicon.ico): This
-  is a smaller version of my gravatar for use as the icon in your browser's
-  address bar. You should change it to whatever you'd like.
-- [apple-touch-icon.png](https://github.com/holman/left/blob/gh-pages/apple-touch-icon.png):
-  Again, this is my gravatar, and it shows up in iOS and various other apps
-  that use this file as an "icon" for your site.
+* To edit the `links` mentioned on the navigation bar, you can edit `_config.yml`. For example:
 
-## Deployment
+```
+nav:
+ - name: "About"
+   link: "/researcher/"
+ - name: "Resume"
+   link: "resume.pdf"
+ - name: "Contact"
+   link: "contact"
+```
 
-Left is designed to be deployed to [GitHub Pages](http://pages.github.com). It
-uses [repository metadata](https://help.github.com/articles/repository-metadata-on-github-pages)
-to generate some of your content, like your GitHub URL and avatar information (so you
-might not actually see it locally until you push it up to Pages).
+* You can change the accent (color of hyperlinks) by editing the `accent` variable in `_sass/vars.scss`
 
-All you should have to do is rename your repository on GitHub to be
-`username.github.com`. Since everything is on the `gh-pages` branch, you
-should be able to see your new site at <http://username.github.io>.
+* You can setup google analytics, by setting `tracking_id` in `_config.yml`
 
-## Licensing
+* To add a profile picture, make sure to give the image tag the class `profile-picture`. In other words,do it like so:
 
-This is [MIT](https://github.com/holman/left/blob/gh-pages/LICENSE) with no
-added caveats, so feel free to use this on your site without linking back to
-me or using a disclaimer or anything silly like that.
+```html
+<img class="profile-picture" src="sherlock.jpg">
+```
 
-If you'd like give me credit somewhere on your blog or tweet a shout out to
-[@holman](https://twitter.com/holman), well hey, I'll take it.
+* You can remove/customize the footer as you like by setting the
+appropriate variables in `_config.yml`
+
+* (New in v1.2.0) You can add institute logo at the top, by setting `ins_logo` in `_config.yml`. If you want
+to adjust the logo's size, try setting `max-height` in `#ins-logo` in file `./_sass/_style.scss` to the desired
+value
+
+![Institute Logo Image Sample](https://github.com/ankitsultana/assets/raw/master/ins-logo-sample.png)
+
+**Note:** Customizing the accent color might cause merge conflicts if you later try to merge from `bk2dcradle/researcher` to fetch updates/patches etc. (applicable only if you have forked).
+
+### License
+
+[GNU GPL v3](https://github.com/bk2dcradle/researcher/blob/gh-pages/LICENSE)
