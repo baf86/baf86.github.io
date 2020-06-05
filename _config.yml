@@ -1,6 +1,15 @@
-title: "Elyse Y. Robinson"
-url: "https://elyserobinson.com"
-baseurl: "https://elyserobinson.com/"
+title: Elyse Y. Robinson | Black American Woman in México
+email:
+description: Story of one Black American woman's adventures in México 🌮
+url: https://elyserobinson.com
+keywords: ["change architect", "black american expat", "black american immigrant", "black american in mexico", "black american podcast", "beaforeigner", "black and overseas", "black blogger"]
+author: Elyse Y. Robinson
+name: "Elyse Y. Robinson | Black American Woman in México"
+short_name: "Elyse Y. Robinson"
+language: "en"
+lang_direction: "ltr"
+color: "#abc123"
+baseurl: https://elyserobinson.com/
 
 markdown: kramdown
 #ins_logo: "./bits-logo.png"
@@ -35,7 +44,6 @@ nav:
  - name: "travel-deals"
    link: "/travel-deals"
 
-description: Story of one Black American woman's adventures in México 🌮
 twitter_username: mselyserobinson
 ins_logo: /img/me.jpg
 twitter: mselyserobinson
