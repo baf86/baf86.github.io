@@ -3,12 +3,6 @@ url: "https://elyserobinson.com"
 baseurl: "/"
 description: Story of one Black American woman's adventures in México...
 keywords: ["change architect", "black american expat", "black american immigrant", "black american in mexico", "black american podcast", "beaforeigner", "black and overseas", "black blogger"]
-author: Elyse Y. Robinson
-name: "Elyse Y. Robinson | Black American Woman in México"
-short_name: "Elyse Y. Robinson"
-language: "en"
-lang_direction: "ltr"
-color: "#abc123"
 timezone:          Americas/Mexico_City
 excerpt_separator: <!--more-->
 permalink:         /:title
@@ -54,7 +48,6 @@ owner:
   telegram: #username
   tripadvisor :
   strava:
-
 
 markdown: kramdown
 ins_logo: "/img/me.jpg"
