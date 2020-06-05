@@ -1,20 +1,12 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "jekyll"
-gem "jekyll-watch"
-gem "jekyll-sitemap"
-gem "colorator"
-gem "ffi"
-gem "jekyll-sass-converter"
-gem "kramdown"
-gem "liquid"
-gem "mercenary"
-gem "rouge"
-gem "safe_yaml"
-gem "sass"
-gem "listen"
-gem "rb-inotify"
-gem "rb-fsevent"
-gem "jekyll-feed"
-gem "jekyll-seo-tag"
-gem "jekyll-paginate"
+group :jekyll_plugins do
+    gem 'github-pages'
+    gem 'jekyll-admin'
+    gem 'jekyll-seo-tag'
+    gem 'jekyll-gist'
+    gem 'jekyll-feed'
+    gem 'jemoji'
+    gem "jekyll-paginate-v2", "~> 2.0"
+    gem "html-proofer"
+end
