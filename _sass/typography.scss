@@ -46,14 +46,5 @@
             padding: 0;
             margin: 0;
         }
-        @media (max-width: $small-width) {
-            img {
-                margin-top: -5px;
-            }
-        }
-    }
-    img {
-        text-align: center;
-        width: 100%;
-    }
+
 }
