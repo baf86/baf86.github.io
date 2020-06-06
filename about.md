@@ -4,7 +4,7 @@ title: About Elyse
 permalink: /about/
 ---
 
-<div style="color: #f84279; text-align: left; font-size: 26px">{{ post.title }}</div>
+<div style="color: #f84279; text-align: left; font-size: 26px">{{ post.title }}{{ page.title }}</div>
 
 <picture>
   <source srcset="/img/about me2.webp" type="image/webp">
