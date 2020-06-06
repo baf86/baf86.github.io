@@ -9,8 +9,11 @@ Without a plan, Elyse Y. Robinson moved to Mexico City after her mother passed a
 <hr>
 
 {% for post in site.posts %}
-<a href="{{ post.url }}"><img src="{{ post.thumbnail }}" width="150" height="150"></a><br>
-<div style="color: #40c1dd; text-align: center; font-size: 16px; font-weight: bold">{{post.date | date: '%Y, %b %d'}}</div><br>
-<div style="text-align: center; font-size: 18px; font-weight: bold"><a href="{{ post.url }}">{{ post.title }}</a></div><br>
+<a href="{{ post.url }}"><img src="{{ post.thumbnail }}" width="150" height="150"></a>
+<div style="color: #40c1dd; text-align: left; font-size: 20px">{{post.date | date: '%Y, %b %d'}}</div>
+<div style="text-align: left; font-size: 30px; font-weight: bold"><a href="{{ post.url }}">{{ post.title }}</a></div><br>
 {{ post.excerpt }}
+
+<hr>
+
 {% endfor %}
