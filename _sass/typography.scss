@@ -1,4 +1,3 @@
-<style lang='scss' rel='stylesheet/scss'>
 @import "vars";
 
 .content {
@@ -49,5 +48,12 @@
         }
         @media (max-width: $small-width) {
             img {
-                margin-top: -5px;}
-</style>
+                margin-top: -5px;
+            }
+        }
+    }
+    img {
+        text-align: center;
+
+    }
+}
