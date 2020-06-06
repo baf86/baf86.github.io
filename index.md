@@ -9,38 +9,9 @@ Without a plan, Elyse Y. Robinson moved to Mexico City after her mother passed a
 <hr>
 
 {% for post in site.posts %}
-<section class="post">
-  <header class="post-header">
-    <p class="post-meta">
-      <span class="post-date">
-        {{ post.date | date: "%-d %b %Y" | upcase }}
-      </span>
-
-    </p>
-    <h4>
-      <a href="{{ site.url }}{{ post.url }}" class="post-title" title="{{ post.title | escape }}">{{ post.title }}</a>
-      {% if post.link %}
-      <a class="post-title-link" href="{{ post.link }}" target="_blank" title="{{ post.title | escape }}"><i class="fa fa-external-link"></i></a>
-      {% endif %}
-    </h4>
-    </header>
-
-    {% if post.excerpt %}
-    <div class="post-description">
-      <p>
-        {{ post.excerpt }}
-      </p>
-    </div>
-    {% endif %}
-
-    {% if post.thumbnail %}
-    <div class="post-image-feature">
-      <img src=
-      {% if post.thumbnail contains 'https' %}
-      "{{ post.image.feature }}"
-      {% else %}
-      "{{ site.url }}/img/{{ post.thumbnail }}"
-      {% endif %}
-      alt="{{ post.title | escape }} feature image">
-</section>
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <span class="date">{{ post.date }}</span>
+  <div class="content">
+    {{ post.content }}
+  </div>
 {% endfor %}
