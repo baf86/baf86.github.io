@@ -4,7 +4,7 @@ title: Grab A Deal
 permalink: /travel-deals/
 ---
 
-<h4><i>Just a few links I've scraped together to offer you deals...</i> 🧭</h4>
+<div style="color: #40c1dd; text-align: left; font-size: 26px; font-weight: bold; text-decoration: underline overline"><img src="/img/ocean.gif" width="30" height="30">{{ page.title }}</div><br>
 
 <b><u>Free Money</b></u><br>
 <ol>

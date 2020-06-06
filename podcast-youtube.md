@@ -4,6 +4,8 @@ title:  Podcast & Youtube
 permalink: /podcast-youtube/
 ---
 
+<div style="color: #40c1dd; text-align: left; font-size: 26px; font-weight: bold; text-decoration: underline overline"><img src="/img/gallery.gif" width="30" height="30">{{ page.title }}</div><br>
+
 <h4><i>Subscribe and listen...</i> 👂🏾</h4>
 
 <iframe src="https://anchor.fm/elyserobinson/embed" frameborder="0" scrolling="no"></iframe>

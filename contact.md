@@ -4,6 +4,8 @@ title:  Contact
 permalink: /contact/
 ---
 
+<div style="color: #40c1dd; text-align: left; font-size: 26px; font-weight: bold; text-decoration: underline overline"><img src="/img/approved.gif" width="30" height="30">{{ page.title }}</div><br>
+
 <style>
     .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);

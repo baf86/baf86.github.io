@@ -4,7 +4,7 @@ title: Search the Site
 permalink: /search/
 ---
 
-<h4><i>Need to find a blog post? Search!</i> 🔍</h4>
+<div style="color: #40c1dd; text-align: left; font-size: 26px; font-weight: bold; text-decoration: underline overline"><img src="/img/question.gif" width="30" height="30">{{ page.title }}</div><br>
 
 <script async src="https://cse.google.com/cse.js?cx=006268630369662675925:jkn1hr0awof"></script>
 <div class="gcse-search"></div>

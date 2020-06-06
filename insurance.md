@@ -4,6 +4,8 @@ title: Buy Insurance
 permalink: /insurance/
 ---
 
+<div style="color: #40c1dd; text-align: left; font-size: 26px; font-weight: bold; text-decoration: underline overline"><img src="/img/checkbox.gif" width="30" height="30">{{ page.title }}</div><br>
+
 <picture>
   <source srcset="/img/insurance agent.webp" type="image/webp">
   <source srcset="/img/insurance agent.jpg" type="image/jpeg">

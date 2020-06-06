@@ -4,7 +4,7 @@ title:  Archives
 permalink: /archives/
 ---
 
-<h4><i>Find old blog posts...</i> 📒</h4>
+<div style="color: #40c1dd; text-align: left; font-size: 26px; font-weight: bold; text-decoration: underline overline"><img src="/img/magnifier.gif" width="30" height="30">{{ page.title }}</div><br>
 
 <div class="archive">
   <div class="timeline" id="timeline">
