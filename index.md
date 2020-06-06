@@ -8,8 +8,11 @@ Without a plan, Elyse Y. Robinson moved to Mexico City after her mother passed a
 
 <hr>
 
-<a name="top"><img src="{{ post.thumbnail }}" width="150" height="150"></a>
-<h2><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+{% for post in site.posts %}
+    <div>
+        <a href="{{ post.url }}" ><img src="{{ site.baseurl }}/img/{{ post.image }}" width="150" height="150" />
+        <h2><a href="{{post.url | prepend: site.baseurl}}" >{{ post.title }}</a></h2>
 {{ post.excerpt }}<br>
 {{post.date | date: '%Y, %b %d'}} &nbsp; | &nbsp;
-{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}
+    </div>
+{% endfor %}
