@@ -6,7 +6,7 @@ permalink: "/:title"
 markdown: kramdown
 ins_logo: "/img/me2.jpg"
 
-tracking_id: UA-79873299-2
+tracking_id: #
 
 footer: yes
 footer_url: ""
