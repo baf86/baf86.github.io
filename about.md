@@ -4,7 +4,7 @@ title: About Elyse
 permalink: /about/
 ---
 
-<div style="color: #40c1dd; text-align: left; font-size: 26px; font-weight: bold; text-decoration: underline overline"><img src="/img/avatar.gif" width="25" height="25">{{ page.title }}</div><br>
+<div style="color: #40c1dd; text-align: left; font-size: 26px; font-weight: bold; text-decoration: underline overline">{{ page.title }}</div><br>
 
 <picture>
   <source srcset="/img/about me2.webp" type="image/webp">
@@ -156,11 +156,13 @@ Without a plan, Elyse Y. Robinson moved to M&eacute;xico City after her mother p
 
 <hr>
 
-Every little bit helps. Become a <a href="https://liberapay.com/elyserobinson" target="_blank">monthly donor</a> and support the blog! *<i>Click the money bag to donate in your local currency or scan the code to send me bitcoin</i>*
-<a href="https://liberapay.com/elyserobinson" target="_blank"><img src="/img/419_money_bag_BTC_solid.gif" width="100" height="100" alt="Love Elyse? Send some money!"></a>
+Every little bit helps. Become a <a href="https://liberapay.com/elyserobinson" target="_blank">monthly donor</a> and support the blog! *<i>Click the money bag to donate in your local currency or scan the code to send me bitcoin</i>*<br>
+<div class="text-align: center"><a href="https://liberapay.com/elyserobinson" target="_blank"><img src="/img/419_money_bag_BTC_solid.gif" width="100" height="100" alt="Love Elyse? Send some money!"></a></div>
 
+<div class="text-align: center">
 <picture>
   <source srcset="/img/bitcoin.webp" type="image/webp">
   <source srcset="/img/bitcoin.jpeg" type="image/jpeg">
   <img src="/img/bitcoin.jpeg" width="280" height="300" alt="Love Elyse? Send some bitcoin!">
 </picture>
+</div>
