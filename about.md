@@ -4,7 +4,7 @@ title: About Elyse
 permalink: /about/
 ---
 
-<div style="color: #40c1dd; text-align: left; font-size: 26px; font-weight: bold; text-decoration: underline overline"><img src="/img/avatar.gif" width="30" height="30">{{ page.title }}</div><br>
+<div style="color: #40c1dd; text-align: left; font-size: 26px; font-weight: bold; text-decoration: underline overline"><img src="/img/avatar.gif">{{ page.title }}</div><br>
 
 <picture>
   <source srcset="/img/about me2.webp" type="image/webp">
