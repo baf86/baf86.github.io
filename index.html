@@ -8,6 +8,7 @@ Without a plan, Elyse Y. Robinson moved to Mexico City after her mother passed a
 
 <hr>
 
+{% for post in paginator.posts %}
 {% for post in site.posts %}
 <a href="{{ post.url }}"><img src="{{ post.thumbnail }}" width="150" height="150"></a>
 <div style="color: #40c1dd; text-align: left; font-size: 20px">{{post.date | date: '%b %d, %Y'}}</div>
@@ -17,10 +18,10 @@ Without a plan, Elyse Y. Robinson moved to Mexico City after her mother passed a
 <hr>
 
 {% endfor %}
+{% endfor %}
 
 <hr>
 
-{% for post in paginator.posts %}
 {% if paginator.previous_page %}
 <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
 {% else %}
