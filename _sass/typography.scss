@@ -46,7 +46,11 @@
             padding: 0;
             margin: 0;
         }
+        @media (max-width: $small-width) {
+            img {
 
+            }
+        }
     }
     img{
         text-align: center;
