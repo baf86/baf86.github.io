@@ -35,7 +35,9 @@ Not to worry, BeAForeigner is an online community that helps people move oversea
 <div style="font-size: 30px; font-weight: bold;"><a href="https://elyserobinson.com" target="_blank">Elyse Y. Robinson</a> @ <a href="https://www.beaforeigner.com" target="_blank">BeAForeigner Inc.</a></div>
 <div style="float: left; padding: 0 20px 20px 0;"><img src="/img/me86.gif" width="100" height="100" alt="Elyse Y. Robinson"></div>
 <br>
+<div style=" text-align: justify; text-justify: inter-word;">
 Without a plan, Elyse Y. Robinson moved to M&eacute;xico City after her mother passed away from blood cancer on November 11, 2016. She never heard of M&eacute;xico City nor even visited M&eacute;xico before. She just knew she had to escape America to mourn. She had quit her whole life to help her family anyway. She had nothing more to lose. She is going into her fourth year in M&eacute;xico and she is there to stay!
+</div>
 
 <hr>
 
