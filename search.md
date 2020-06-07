@@ -49,8 +49,6 @@ Every little bit helps. Become a <a href="https://liberapay.com/elyserobinson" t
 
 <a href="https://liberapay.com/elyserobinson" target="_blank"><img src="/img/moneybag.gif" width="80" height="80" alt="Love Elyse? Send some bitcoin!" class="center"></a>
 
-<br>
-
 <picture>
   <source srcset="/img/bitcoin.webp" type="image/webp">
   <source srcset="/img/bitcoin.jpeg" type="image/jpeg">

@@ -20,7 +20,7 @@ permalink: /travel-deals/
 
 
 
-<b><u>Travel</b></u><br>
+<b><u>Travel</u></b><br>
 <ol>
 <li><a href="https://www.airbnb.com/c/elyser93?currency=USD" target="_blank">Airbnb</a> - Get $40 off a home booking of $75 or more and $15 off an experience of $50 or more.</li>
 
@@ -47,7 +47,7 @@ permalink: /travel-deals/
 </ol>
 
 
-<b><u>Other</b></u><br>
+<b><u>Other</u></b><br>
 <ol>
 <li><a href="https://baselang.com/signup/?referral=me%40elyserobinson.com" target="_blank">BaseLang</a> - The website I've been using to learn Spanish with unlimited lessons for $149 per month.</li>
 
@@ -105,8 +105,6 @@ Without a plan, Elyse Y. Robinson moved to M&eacute;xico City after her mother p
 Every little bit helps. Become a <a href="https://liberapay.com/elyserobinson" target="_blank">monthly donor</a> and support the blog! <i>Click the money bag to donate in your local currency or scan the code to send me bitcoin</i><br>
 
 <a href="https://liberapay.com/elyserobinson" target="_blank"><img src="/img/moneybag.gif" width="80" height="80" alt="Love Elyse? Send some bitcoin!" class="center"></a>
-
-<br>
 
 <picture>
   <source srcset="/img/bitcoin.webp" type="image/webp">
