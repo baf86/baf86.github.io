@@ -61,11 +61,11 @@ hr {
 }
 .pull-left {
     @extend .alignable;
-    float: center;
+    text-align: center;
 }
 .pull-right {
     @extend .alignable;
-    float: center;
+    text-align: center;
 }
 
 /* Divs */
