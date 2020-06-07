@@ -102,7 +102,7 @@ document.body.appendChild(el);
             {% if site.ins_logo %}
                 <img id="ins-logo" src="{{ site.ins_logo }}" width="100" height="150" />
             {% endif %}
-            <b><a id="author-name" class="alignable pull-left" href="{{ site.baseurl }}">{{ site.title }}</a></b>
+            <div style="text-align: center"><b><a id="author-name" class="alignable pull-left" href="{{ site.baseurl }}">{{ site.title }}</a></b>
             <ul id="navlist" class="alignable pull-right navbar-ul">
                 {% for x in site.nav %}
                     {% if x.name == "Resume" %}
@@ -116,7 +116,7 @@ document.body.appendChild(el);
                         </li>
                 {% endfor %}
             </ul>
-<div style="text-align: center;"<a href="https://liberapay.com/elyserobinson" target="_blank"><i class="fas fa-donate"></i></a>
+<a href="https://liberapay.com/elyserobinson" target="_blank"><i class="fas fa-donate"></i></a>
 <a href="https://{{ author.amazon-author }}" target="_blank"><i class="fab fa-amazon"></i></a>
 <a href="http://youtube.com/elyserobinson" target="_blank"><i class="fab fa-youtube"></i></a>
 <a href="https://anchor.fm/elyserobinson" target="_blank"><i class="fas fa-podcast"></i></a>
