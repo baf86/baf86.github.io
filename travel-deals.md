@@ -6,7 +6,7 @@ permalink: /travel-deals/
 
 <div style="color: #40c1dd; text-align: left; font-size: 26px; font-weight: bold; text-decoration: underline overline">{{ page.title }}</div><br>
 
-<b><u>Free Money</b></u><br>
+<b><u>Free Money</u></b><br>
 <ol>
 <li><a href="https://www.coinbase.com/join/robins_3cw" target="_blank">Coinbase</a> - Get $10 worth of Bitcoin free!</li>
 
