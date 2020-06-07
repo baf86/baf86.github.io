@@ -54,17 +54,18 @@ hr {
 .nav-list {
     list-style-type: none;
     margin: 0 5px 0 10px;
+    font-size: 18px;
 }
 .alignable {
     display: inline-block;
 }
 .pull-left {
     @extend .alignable;
-    float: left;
+    float: center;
 }
 .pull-right {
     @extend .alignable;
-    float: right;
+    float: center;
 }
 
 /* Divs */

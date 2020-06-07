@@ -102,8 +102,8 @@ document.body.appendChild(el);
             {% if site.ins_logo %}
                 <img id="ins-logo" src="{{ site.ins_logo }}" width="100" height="150" />
             {% endif %}
-            <div style="text-align: center"><b><a id="author-name" class="alignable pull-left" href="{{ site.baseurl }}">{{ site.title }}</a></b></div>
-            <div style="font-size: 18px;"><ul id="navlist" class="alignable pull-right navbar-ul">
+            <b><a id="author-name" class="alignable pull-left" href="{{ site.baseurl }}">{{ site.title }}</a></b>
+            <ul id="navlist" class="alignable pull-right navbar-ul">
                 {% for x in site.nav %}
                     {% if x.name == "Resume" %}
                         <li class="alignable pull-left nav-list"><a target="_blank" href="{{ x.link }}">{{ x.name }}</a>
@@ -124,7 +124,6 @@ document.body.appendChild(el);
 <a href="http://facebook.com/mselyserobinson" target="_blank"><i class="fab fa-facebook"></i></a>
 <a href="http://twitter.com/mselyserobinson" target="_blank"><i class="fab fa-twitter"></i></a>
 <a href="http://www.pinterest.com/mselyser" target="_blank"><i class="fab fa-pinterest"></i></a>
-</div>
         </div>
 
         <hr>
