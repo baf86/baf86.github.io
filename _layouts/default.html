@@ -103,7 +103,7 @@ document.body.appendChild(el);
                 <img id="ins-logo" src="{{ site.ins_logo }}" width="100" height="150" />
             {% endif %}
             <div style="text-align: center"><b><a id="author-name" class="alignable pull-left" href="{{ site.baseurl }}">{{ site.title }}</a></b>
-            <div style="font-size: 16px;"><ul id="navlist" class="alignable pull-right navbar-ul">
+            <div style="font-size: 18px;"><ul id="navlist" class="alignable pull-right navbar-ul">
                 {% for x in site.nav %}
                     {% if x.name == "Resume" %}
                         <li class="alignable pull-left nav-list"><a target="_blank" href="{{ x.link }}">{{ x.name }}</a>
@@ -134,11 +134,11 @@ document.body.appendChild(el);
         {% else %}
             <div class="container content">
         {% endif %}
-                <div style="font size: 16px;">{{ content }}</div>
+                <div style="font size: 18px;">{{ content }}</div>
 
                     <hr />
 <br>
-                    <div style="text-align: center;">
+                    <div style="text-align: center; font size: 11px;">
                     &copy; 2016 - 2020 | made with love by Elyse Y. Robinson<br>
                     <img src="/img/running-heart.gif" width="50" height="50" alt="Made with love by Elyse Y. Robinson">
                     </div>
