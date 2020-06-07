@@ -158,13 +158,9 @@ Without a plan, Elyse Y. Robinson moved to M&eacute;xico City after her mother p
 
 Every little bit helps. Become a <a href="https://liberapay.com/elyserobinson" target="_blank">monthly donor</a> and support the blog! <i>Click the money bag to donate in your local currency or scan the code to send me bitcoin</i><br>
 
-<picture>
-  <source srcset="/img/money.webp" type="image/webp">
-  <source srcset="/img/money.jpg" type="image/jpeg">
-<a href="https://liberapay.com/elyserobinson" target="_blank"><img src="/img/money.jpg" width="64" height="64" alt="Love Elyse? Send some bitcoin!" class="center"></a>
-</picture>
+<a href="https://liberapay.com/elyserobinson" target="_blank"><img src="/img/moneybag.gif" width="80" height="80" alt="Love Elyse? Send some bitcoin!" class="center"></a>
 
-<br><br>
+<br>
 
 <picture>
   <source srcset="/img/bitcoin.webp" type="image/webp">
